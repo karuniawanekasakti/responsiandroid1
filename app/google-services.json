@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1048777137883",
+    "firebase_url": "https://jobcourse-35d3e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "jobcourse-35d3e",
+    "storage_bucket": "jobcourse-35d3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048777137883:android:ecd87b542e74cab9aa76fe",
+        "android_client_info": {
+          "package_name": "com.firejobcourse.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048777137883-nopjmhospkphav5nnmj9ng5dpe82obea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUVaSfGOfoDnD6f762V9lV4DAG9DKVLnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048777137883-nopjmhospkphav5nnmj9ng5dpe82obea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
