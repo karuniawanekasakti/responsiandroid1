@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgPrimary"
-    tools:context=".RegisterOneAct">
+    tools:context=".UpdatePendaftaranAct">
+
 
     <View
         android:id="@+id/view"
@@ -24,7 +25,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/mregular"
-        android:text="Create New Account"
+        android:text="Edit Data"
         android:textAlignment="center"
         android:textColor="#FFF"
         android:textSize="24sp"
@@ -40,7 +41,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/mregular"
-        android:text="Please fill up the forms below \nfor Informations"
+        android:text="Ubah data anda menggunakan data baru"
         android:textAlignment="center"
         android:textColor="#FFF"
         android:textSize="20sp"
@@ -67,22 +68,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:orientation="vertical"
             android:layout_marginBottom="24dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/mlight"
-                android:text="@string/username_label"
+                android:text="@string/newusn_label"
                 android:textColor="@color/grayPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                />
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/usernamelabel"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_input_edit"
@@ -90,7 +92,8 @@
                 android:inputType="text"
                 android:lines="1"
                 android:paddingLeft="12dp"
-                android:textColor="@color/blackPrimary" />
+                android:textColor="@color/blackPrimary"
+                />
 
 
         </LinearLayout>
@@ -98,22 +101,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:orientation="vertical"
             android:layout_marginBottom="24dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/mlight"
-                android:text="@string/password_label"
+                android:text="@string/newpass_label"
                 android:textColor="@color/grayPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                />
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/passwordlabel"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_input_edit"
@@ -121,30 +125,31 @@
                 android:inputType="text"
                 android:lines="1"
                 android:paddingLeft="12dp"
-                android:textColor="@color/blackPrimary" />
+                android:textColor="@color/blackPrimary"
+                />
 
 
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:orientation="vertical"
             android:layout_marginBottom="24dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/mlight"
-                android:text="@string/email_label"
+                android:text="@string/newemail_label"
                 android:textColor="@color/grayPrimary"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_marginBottom="12dp"
+                />
 
             <EditText
-                android:id="@+id/email_address"
+                android:id="@+id/emaillabel"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_input_edit"
@@ -152,19 +157,19 @@
                 android:inputType="text"
                 android:lines="1"
                 android:paddingLeft="12dp"
-                android:textColor="@color/blackPrimary" />
+                android:textColor="@color/blackPrimary"
+                />
 
 
         </LinearLayout>
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
         android:orientation="horizontal"
         android:weightSum="4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -183,11 +188,13 @@
                 android:layout_height="55dp"
                 android:background="@drawable/bg_layout_white"
                 android:gravity="center"
+                android:onClick="back"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="28dp"
+                    android:onClick="back"
                     android:src="@drawable/ic_back" />
 
             </LinearLayout>
@@ -195,9 +202,9 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginLeft="24dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
             android:layout_weight="3"
             android:orientation="vertical">
 
@@ -207,13 +214,13 @@
                 android:layout_height="55dp"
                 android:background="@drawable/bg_btn_blue_primary"
                 android:fontFamily="@font/mmedium"
-                android:text="CONTINUE"
+                android:onClick="update"
+                android:text="UPDATE"
                 android:textColor="#FFF"
                 android:textSize="20sp" />
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

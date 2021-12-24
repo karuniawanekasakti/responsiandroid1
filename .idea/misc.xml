@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_edit_pendaftaran.xml" value="0.22" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_edit_profil.xml" value="0.25" />
         <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_getstarted.xml" value="0.12771739130434784" />
-        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_register_one.xml" value="0.22" />
         <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_register_two.xml" value="0.25" />
         <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_signin.xml" value="0.12771739130434784" />
-        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_success_register.xml" value="0.12771739130434784" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_splash.xml" value="0.19067028985507245" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_success_logout.xml" value="0.17708333333333334" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/activity_success_register.xml" value="0.1" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/layout/test.xml" value="0.33" />
+        <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/menu/activity_menu.xml" value="0.209375" />
         <entry key="..\:/KULIAH/SEM 3/Praktikum Pemrograman Aplikasi Perangkat Bergerak 1/project/FireJobCourse/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22552083333333334" />
         <entry key="..\:/PROYEKKU/FireJobCourse/app/src/main/res/drawable/bg_btn_blue_primary.xml" value="0.20677083333333332" />
         <entry key="..\:/PROYEKKU/FireJobCourse/app/src/main/res/layout/activity_getstarted.xml" value="0.190625" />

@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -43,6 +44,8 @@ public class RegisterTwoAct extends AppCompatActivity {
     DatabaseReference reference;
     StorageReference storage;
 
+    ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -56,6 +59,8 @@ public class RegisterTwoAct extends AppCompatActivity {
         btn_back=findViewById(R.id.btn_back);
         pic_photo_register=findViewById(R.id.pic_photo_register_user);
         btn_continue=findViewById(R.id.btn_continue);
+
+        progressBar = findViewById(R.id.progressbar);
 
         btn_add_photo.setOnClickListener(new View.OnClickListener() {
             @Override

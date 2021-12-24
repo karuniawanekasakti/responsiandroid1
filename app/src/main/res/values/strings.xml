@@ -13,4 +13,10 @@
     <string name="bio_label">Your Passion?</string>
     <string name="explore">EXPLORE NOW</string>
     <string name="slogan">Selamat datang di /n Aplikasi Job Course</string>
+    <string name="newusn_label">Username</string>
+    <string name="newpass_label">Password</string>
+    <string name="newemail_label">Email</string>
+    <string name="edit_data">Edit Data</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="logout">Logout</string>
 </resources>

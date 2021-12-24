@@ -22,10 +22,10 @@ public class SignInAct extends AppCompatActivity {
     TextView btn_new_account;
     Button btn_sign_in;
     EditText xusername,xpassword;
-     DatabaseReference reference;
+    DatabaseReference reference;
 
-     String USERNAME_KEY="usernamekey";
-     String username_key="";
+    String USERNAME_KEY="usernamekey";
+    String username_key="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -78,20 +78,36 @@ public class SignInAct extends AppCompatActivity {
                                     // validasi password dengan password firebase
                                     if(password.equals(passwordFromFirebase)){
 
+                                        String emailFromFirebase = dataSnapshot.child(password).child("email_addres").getValue(String.class);
+                                        String namaFromFirebase = dataSnapshot.child(password).child("nama_lengkap").getValue(String.class);
+                                        String bioFromFirebase = dataSnapshot.child(password).child("nik").getValue(String.class);
+                                        String userFromFirebase = dataSnapshot.child(password).child("username").getValue(String.class);
+
+
+
                                         // simpan username (key) kepada local
                                         SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
                                         SharedPreferences.Editor editor = sharedPreferences.edit();
                                         editor.putString(username_key, xusername.getText().toString());
                                         editor.apply();
 
+
                                         // berpindah activity
+                                        getIntent().putExtra("email_address",emailFromFirebase);
+                                        getIntent().putExtra("nama_lengkap",namaFromFirebase);
+                                        getIntent().putExtra("nik",bioFromFirebase);
+                                        getIntent().putExtra("username",userFromFirebase);
+                                        getIntent().putExtra("password",passwordFromFirebase);
                                         Intent gotohome = new Intent(SignInAct.this,HomeAct.class);
+
+
+
                                         startActivity(gotohome);
 
                                     }
                                     //toast pasword salah
                                   else{
-                                        Toast.makeText(getApplicationContext(), "Password salah!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Password atau Username salah!", Toast.LENGTH_SHORT).show();
                                         // ubah state menjadi loading
                                         btn_sign_in.setEnabled(true);
                                         btn_sign_in.setText("SIGN IN");
@@ -103,7 +119,7 @@ public class SignInAct extends AppCompatActivity {
                                 //toast username tidak ada
 
                                 else {
-                                    Toast.makeText(getApplicationContext(), "Username tidak kosong!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Password atau Username Tidak Ada!", Toast.LENGTH_SHORT).show();
                                     // ubah state menjadi loading
                                     btn_sign_in.setEnabled(true);
                                     btn_sign_in.setText("SIGN IN");
@@ -125,14 +141,14 @@ public class SignInAct extends AppCompatActivity {
         });
 
 
-        btn_new_account.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent gotoregister= new Intent(SignInAct.this, RegisterOneAct.class);
-                startActivity(gotoregister);
-            }
-        });
+//        btn_new_account.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent gotoregister= new Intent(SignInAct.this, RegisterOneAct.class);
+//                startActivity(gotoregister);
+//            }
+//        });
 
 
     }

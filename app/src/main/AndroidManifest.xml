@@ -24,6 +24,11 @@
         <activity android:name=".SignInAct"/>
         <activity android:name=".HomeAct"/>
         <activity android:name=".SuccessRegisterAct"/>
+        <activity android:name=".UpdatePendaftaranAct"/>
+        <activity android:name=".UpdateProfileAct"/>
+        <activity android:name=".SuccessLogoutAct"/>
+
+
 
 
     </application>

@@ -1,4 +1,4 @@
-  <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -58,7 +58,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/photoprofile"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="29dp"
@@ -68,7 +68,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/usernamehome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -77,10 +77,11 @@
                 android:text="Ela Marinka"
                 android:textColor="#FFF"
                 android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintStart_toEndOf="@+id/photoprofile"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
+                android:id="@+id/bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -89,8 +90,9 @@
                 android:text="@string/bio_label"
                 android:textColor="#FFF"
                 android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintStart_toEndOf="@+id/photoprofile"
+                app:layout_constraintTop_toBottomOf="@+id/usernamehome" />
+
 
 
             <LinearLayout
@@ -154,6 +156,7 @@
                             android:id="@+id/btn_daftar"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:onClick="data_pendaftaran"
                             android:src="@drawable/icon_pendaftaran" />
 
                         <TextView
@@ -161,9 +164,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Pendaftaran"
+                            android:text="Edit Data Pendaftaran"
                             android:textColor="@color/grayPrimary"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            android:gravity="center"/>
 
                     </LinearLayout>
 
@@ -175,9 +179,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/btn_pelatihan"
+                            android:id="@+id/btn_profile"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:onClick="data_profile"
                             android:src="@drawable/icon_pelatihan" />
 
                         <TextView
@@ -185,9 +190,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Pelatihan"
+                            android:text="Edit Data Profile"
                             android:textColor="@color/grayPrimary"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            android:gravity="center"/>
 
                     </LinearLayout>
 
@@ -199,9 +205,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/btn_alurdaftar"
+                            android:id="@+id/btn_logout"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
+                            android:onClick="logout_act"
                             android:src="@drawable/icon_tatapendaftaran" />
 
                         <TextView
@@ -209,7 +216,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Alur Daftar"
+                            android:text="Logout"
                             android:textColor="@color/grayPrimary"
                             android:textSize="14sp" />
 
